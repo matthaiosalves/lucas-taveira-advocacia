@@ -20,4 +20,4 @@ function lucas_taveira_scripts()
 }
 add_action('wp_enqueue_scripts', 'lucas_taveira_scripts');
 
-require get_template_directory() . '';
+// require get_template_directory() . '';
