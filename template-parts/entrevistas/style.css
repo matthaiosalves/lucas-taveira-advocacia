@@ -3,6 +3,12 @@
   padding-bottom: 106px;
   background-color: #1b2838;
 }
+.entrevistas hr {
+  color: #dbdbdb;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+}
 .entrevistas .boxContentEntrevistas {
   display: flex;
   align-items: center;
