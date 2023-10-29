@@ -1,0 +1,54 @@
+.areasDeAtuacao {
+  padding-top: 61px;
+  padding-bottom: 65px;
+  background-color: #fff;
+}
+.areasDeAtuacao hr {
+  color: #dbdbdb;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+}
+.areasDeAtuacao .boxTitleAndDescription {
+}
+.areasDeAtuacao .boxTitleAndDescription .title {
+  font-size: 34px;
+  line-height: 63px;
+  color: #1b2838;
+  font-weight: bold;
+}
+.areasDeAtuacao .boxTitleAndDescription .description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #3b425c;
+}
+.areasDeAtuacao .boxContentAreas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.areasDeAtuacao .boxContentAreas .boxImage {
+  max-width: 620px;
+  min-height: 350px;
+}
+.areasDeAtuacao .boxContentAreas .boxImage {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.areasDeAtuacao .boxContentAreas .boxTitleAndDescriptionAreas {
+  max-width: 460px;
+  width: 100%;
+  margin-left: auto;
+}
+.areasDeAtuacao .boxContentAreas .boxTitleAndDescriptionAreas .title {
+  color: #3b425c;
+  font-size: 28px;
+  line-height: 43px;
+  font-weight: bold;
+}
+.areasDeAtuacao .boxContentAreas .boxTitleAndDescriptionAreas .description {
+  color: #474544;
+  font-size: 18px;
+  line-height: 28px;
+}
