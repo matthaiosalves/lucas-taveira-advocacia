@@ -10,6 +10,7 @@
   max-width: 100%;
 }
 .areasDeAtuacao .boxTitleAndDescription {
+  text-align: center;
 }
 .areasDeAtuacao .boxTitleAndDescription .title {
   font-size: 34px;

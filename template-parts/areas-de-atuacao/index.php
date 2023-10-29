@@ -4,7 +4,7 @@
     <div class="row">
       <div class="boxTitleAndDescription">
         <h2 class="title">Áreas de atuação</h2>
-        <p class="descrition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+        <p class="descrition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor.</p>
       </div>
     </div>
     <hr />
