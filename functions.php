@@ -15,7 +15,7 @@ if (!defined('_S_VERSION')) {
 
 function lucas_taveira_scripts()
 {
-	wp_enqueue_style('lucas-taveira-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_enqueue_style('lucas-taveira-style', get_template_directory_uri() . '/style.css', array(), _S_VERSION);
 	wp_enqueue_script('lucas-taveira-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'lucas_taveira_scripts');
