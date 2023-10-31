@@ -1,0 +1,45 @@
+.conheca-equipe {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  background-color: rgba(244, 244, 244, 0.5);
+}
+.conheca-equipe .container-fluid > hr {
+  margin-top: -5px;
+  color: #8d8b8b;
+}
+.conheca-equipe .boxTitleAndDescription {
+  text-align: center;
+}
+.conheca-equipe .listTeam {
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.conheca-equipe .listTeam .boxTeam {
+  width: 321px;
+  max-width: 100%;
+}
+.conheca-equipe .listTeam .boxTeam figure img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 150px;
+}
+.conheca-equipe .listTeam .boxTitleAndDescription .title {
+  margin-bottom: 0;
+}
+.conheca-equipe .listTeam .boxTeam .boxTitleAndDescription .description {
+  color: #7b7b7b;
+  font-size: 17px;
+  line-height: 28px;
+}
+.conheca-equipe .listTeam .boxTitleAndDescription > hr {
+  width: 165px;
+  height: 1px;
+  color: #2d2d2d;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}

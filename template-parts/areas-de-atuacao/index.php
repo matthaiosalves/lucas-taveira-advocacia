@@ -28,7 +28,7 @@ $areas = get_field('areas_de_atuacao');
             </p>
 
             <div class="boxButton">
-              <a class="btn" href="#">Exemplo</a>
+              <a class="buttonAreas" href="#">SAIBA MAIS</a>
             </div>
           </div>
 

@@ -55,7 +55,8 @@
 }
 .areasDeAtuacao .boxContentAreas .boxImage {
   max-width: 620px;
-  height: 230px;
+  height: 250px;
+  margin-bottom: 0;
 }
 .areasDeAtuacao .boxContentAreas .boxImage img {
   max-width: 100%;
