@@ -1,7 +1,11 @@
-<section class="areasDeAtuacao">
+<?php
+$areas = get_field('areas_de_atuacao');
+?>
+<section class="areasDeAtuacao" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner-areas.png');">
   <div class="container-fluid">
 
     <div class="row">
+
       <div class="boxTitleAndDescription">
         <h2 class="title">Áreas de atuação</h2>
         <p class="descrition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor.</p>
@@ -10,20 +14,29 @@
     <hr />
 
     <div class="row">
-      <div class="boxContentAreas">
+      <?php foreach ($areas as $item) : ?>
+        <div class="boxContentAreas">
 
-        <figure class="boxImage">
-          <img src="" alt="">
-        </figure>
+          <figure class="boxImage">
+            <img class="img-fluid" src="<?php echo $item['imagem']; ?>" alt="Áreas de Atuação">
+          </figure>
 
-        <div class="boxTitleAndDescriptionAreas">
-          <h2 class="title">Maior experiência em Direito do Consumidor</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-          </p>
+          <div class="boxTitleAndDescriptionAreas">
+            <h2 class="title"><?php echo $item['titulo']; ?></h2>
+            <p class="description">
+              <?php echo $item['descricao']; ?>
+            </p>
+
+            <div class="boxButton">
+              <a class="btn" href="#">Exemplo</a>
+            </div>
+          </div>
+
         </div>
-
-      </div>
+      <?php endforeach; ?>
     </div>
+
+
+
   </div>
 </section>

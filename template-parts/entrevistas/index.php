@@ -1,3 +1,6 @@
+<?php
+$entrevistas = get_field('entrevistas');
+?>
 <section class="entrevistas">
   <div class="container-fluid">
     <div class="row">
@@ -13,7 +16,7 @@
         </div>
 
         <figure class="boxImage">
-          <img src="" alt="">
+          <?php echo $entrevistas; ?>
         </figure>
 
       </div>

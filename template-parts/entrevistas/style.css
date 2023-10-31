@@ -6,7 +6,7 @@
 .entrevistas hr {
   color: #dbdbdb;
   height: 1px;
-  width: 100%;
+  width: 329px;
   max-width: 100%;
 }
 .entrevistas .boxContentEntrevistas {
@@ -37,4 +37,9 @@
   max-width: 642px;
   width: 100%;
   border-radius: 20px;
+}
+.entrevistas .boxContentEntrevistas .boxImage > iframe {
+  border-radius: 20px;
+  max-width: 100%;
+  width: 100%;
 }
