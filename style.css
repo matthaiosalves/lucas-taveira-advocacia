@@ -27,6 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("./template-parts/areas-de-atuacao/style.css");
 @import url("./template-parts/entrevistas/style.css");
 @import url("./template-parts/conheca-nossa-equipe/style.css");
+@import url("./template-parts/banner-home/style.css");
 
 * {
   padding: 0;
