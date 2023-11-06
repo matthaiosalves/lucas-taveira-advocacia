@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
 }
 body,
 input,
@@ -101,5 +102,17 @@ select {
   background-color: #3b425c;
   border: 2px solid #ffffff;
   color: #ffffff;
+}
+.buttonEntrevistas .setaButton,
+.buttonAreas .setaButton {
+  margin-top: 2px !important;
+  opacity: 0 !important;
+  transform: translateX(-100%) !important;
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+.buttonEntrevistas:hover .setaButton,
+.buttonAreas:hover .setaButton {
+  opacity: 1 !important;
+  transform: translateX(7px) !important;
 }
 /*Fim Botoes*/

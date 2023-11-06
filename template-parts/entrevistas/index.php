@@ -15,7 +15,11 @@ $entrevistas = get_field('entrevistas');
           </p>
 
           <div class="boxButton">
-            <a href="#" class="buttonEntrevistas">VEJA TODAS</a>
+            <a href="#" class="buttonEntrevistas">
+              VEJA TODAS
+              <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+            </a>
+
           </div>
         </div>
 

@@ -28,7 +28,10 @@ $areas = get_field('areas_de_atuacao');
             </p>
 
             <div class="boxButton">
-              <a class="buttonAreas" href="#">SAIBA MAIS</a>
+              <a class="buttonAreas" href="#">
+                SAIBA MAIS
+                <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+              </a>
             </div>
           </div>
 
