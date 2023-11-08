@@ -141,7 +141,7 @@ select {
 
   opacity: 0;
 
-  transition: all 0.2;
+  transition: all 0.2s;
 }
 .navbar .nav-link:hover .borderBottom {
   opacity: 1;
