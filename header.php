@@ -52,16 +52,27 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Artigos</a>
+						<a class="nav-link" href="#">
+							Artigos
+							<span class="borderBottom"></span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Equipe</a>
+						<a class="nav-link" href="#">
+							Equipe
+							<span class="borderBottom"></span>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Entrevistas</a>
+						<a class="nav-link" href="#">
+							Entrevistas
+							<span class="borderBottom"></span>
+						</a>
 					</li>
 					<li class="nav-item buttonContactHeader">
-						<a class="nav-link" href="#">Contato</a>
+						<a class="nav-link" href="#">
+							Contato
+						</a>
 					</li>
 				</ul>
 			</div>
