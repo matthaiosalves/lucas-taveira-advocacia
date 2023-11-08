@@ -2,6 +2,7 @@
   background-size: cover;
   min-height: 900px;
   background-position: center;
+  position: relative;
 }
 .banner-home::before {
   content: "";

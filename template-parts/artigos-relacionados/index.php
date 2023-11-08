@@ -12,13 +12,13 @@
     <hr />
 
 
-    <div class="row">
+    <div class="row px-4">
 
       <div class="card">
         <div class="card-body">
 
           <div class="boxImage">
-            <img class="img-fluid" src="https://i.imgur.com/8RjZi65.png" alt="Imagem da thumb do artigo">
+            <img src="https://i.imgur.com/8RjZi65.png" alt="Imagem da thumb do artigo">
           </div>
 
           <div class="boxTitleAndDescription">
@@ -33,7 +33,7 @@
 
             <div class="boxInfoArtigos">
               <div class="boxAutorArtigos">
-                <img src="" alt="Imagem do Artigo" class="img-fluid">
+                <i class="fa-solid fa-clipboard fa-2x"></i></i><i class="fa fa-pencil fa"></i>
                 <span>Por Lucas Taveira - 10/09/2023</span>
               </div>
 
@@ -45,9 +45,15 @@
               </div>
 
               <div class="boxSocialsButtons">
-                <a href="#" class="social"></a>
-                <a href="#" class="social"></a>
-                <a href="#" class="social"></a>
+                <a href="#" class="social">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
               </div>
 
             </div>
@@ -57,6 +63,15 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="row">
+      <div class="boxButton d-flex justify-content-center" style="margin-top: 30px;">
+        <a class="buttonAreas" href="#">
+          VEJA TODAS
+          <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+        </a>
+      </div>
     </div>
 
   </div>

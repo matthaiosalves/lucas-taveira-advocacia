@@ -1,0 +1,10 @@
+.saiba {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.saiba .contentParagraph {
+  color: #474544;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Poppins";
+}

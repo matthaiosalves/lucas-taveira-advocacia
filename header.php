@@ -27,7 +27,7 @@
 	<?php wp_body_open(); ?>
 
 
-	<nav class="navbar navbar-expand-lg bg-light fixed-top">
+	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,23 +36,32 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" aria-current="page" href="#">
+							Escritório
+							<span class="borderBottom"></span>
+						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown dropdown-hover">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Dropdown link
+							Áreas de Atuação
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<span class="traceBlue"></span>
+							<li><a class="dropdown-item" href="#">Direito do Consumidor</a></li>
+							<li><a class="dropdown-item" href="#">Inventário e Partilha</a></li>
 						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Artigos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Equipe</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Entrevistas</a>
+					</li>
+					<li class="nav-item buttonContactHeader">
+						<a class="nav-link" href="#">Contato</a>
 					</li>
 				</ul>
 			</div>
