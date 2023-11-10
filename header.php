@@ -70,7 +70,7 @@
 						</a>
 					</li>
 					<li class="nav-item buttonContactHeader">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="#contato">
 							Contato
 						</a>
 					</li>

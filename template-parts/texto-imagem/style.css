@@ -1,0 +1,18 @@
+.texto-imagem {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.texto-imagem .col-texto {
+  flex: 1;
+  padding: 20px;
+}
+.texto-imagem .col-imagem {
+  flex: 1;
+  flex-shrink: 0;
+}
+.texto-imagem .col-texto .texto {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 30px;
+  color: #474544;
+}

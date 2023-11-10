@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("./template-parts/conheca-nossa-equipe/style.css");
 @import url("./template-parts/banner-home/style.css");
 @import url("./template-parts/saiba/style.css");
+@import url("./template-parts/texto-imagem/style.css");
 
 * {
   padding: 0;
@@ -48,6 +49,12 @@ input,
 textarea,
 select {
   font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 30px;
+  color: #474544;
 }
 .container-fluid {
   max-width: 1136px;
@@ -275,7 +282,7 @@ select {
 }
 .boxTitlePrime .subtitle {
   font-family: "Poppins";
-  font-size: 32px;
+  font-size: 26px;
   line-height: 45px;
   font-weight: bold;
   color: #1b2838;
@@ -298,7 +305,170 @@ select {
   line-height: 26px;
   color: #787878;
 }
+
+/* Footer */
+.footer {
+  min-height: 427px;
+
+  background-color: #3b425c;
+  padding-top: 50px;
+  padding-bottom: 52px;
+}
+.footer .boxIcon {
+  margin-bottom: 30px;
+}
+.footer .boxTitleFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+.footer .boxTitleFooter .title {
+  font-size: 22px;
+  line-height: 32px;
+
+  margin-bottom: 0;
+
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+.footer .boxTitleFooter .borderBottom {
+  width: 24px;
+  height: 2px;
+  background-color: #fafafa;
+}
+.footer .boxSocials {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+.footer .boxDescriptionFooter .description {
+  color: #eff7f8;
+  font-size: 13px;
+  line-height: 24px;
+  opacity: 0.55;
+  width: 442px;
+  font-family: "Poppins", sans-serif;
+}
+.footer .boxSocial .boxTitleFooter {
+  margin-bottom: 16px;
+}
+.footer .boxSocial .boxTitleFooter .title {
+  color: #818891;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+.footer .boxSocials .social {
+  background-color: #ffffff;
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+  color: #3b425c;
+
+  transition: all 0.2 ease-in-out;
+}
+.footer .boxSocials .social:hover {
+  filter: brightness(0.85);
+}
+.footer .boxItemFooter {
+  margin-left: 165px;
+}
+.footer .boxItemFooter .boxLinks ul {
+  padding-left: 0;
+}
+.footer .boxItemFooter .boxLinks ul li,
+.footer .boxItemFooter .boxLinks ul li a {
+  list-style: none;
+
+  color: #eff7f8;
+  font-size: 15px;
+  line-height: 24px;
+
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+}
+.footer .boxItemFooter .boxDescriptionItemFooter .description {
+  width: 402px;
+  color: #eff7f8;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+}
+.footer .boxItemFooter .boxDescriptionItemFooter .btnFooter {
+  max-width: 140px;
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #1e3250;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 24px;
+  margin-bottom: 27px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.footer .boxItemFooter .boxDescriptionItemFooter .btnFooter > img {
+  transform: translate(-6px);
+  transition: all 0.2s ease-in-out;
+}
+.footer .boxItemFooter .boxDescriptionItemFooter .btnFooter:hover {
+  background-color: #aecfe6;
+}
+.footer .boxSocialsPrime {
+  display: flex;
+  justify-content: flex-end;
+}
+.copyright {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  min-height: 54px;
+  background-color: #1b2838;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fim Footer*/
+@media (max-width: 1199px) {
+  .footer .boxSocialsPrime {
+    justify-content: flex-start;
+  }
+  .footer .boxItemFooter {
+    margin-left: 0px;
+  }
+}
 @media (max-width: 1070px) {
+  .artigos .card {
+    max-width: 100%;
+    width: 380px;
+  }
   .artigos .card .boxImage,
   .artigos .card .boxImage img {
     width: 100%;
@@ -307,9 +477,22 @@ select {
   .artigos .card .card-body {
     flex-wrap: wrap;
   }
+  .texto-imagem .col-texto {
+    flex: auto;
+    padding: 20px;
+  }
+  .texto-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 @media (max-width: 980px) {
   .conheca-equipe .listTeam {
     justify-content: center;
+  }
+  .footer .boxDescriptionFooter .description {
+    max-width: 100%;
+    width: 480px;
   }
 }
