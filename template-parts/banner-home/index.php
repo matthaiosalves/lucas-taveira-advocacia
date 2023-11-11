@@ -1,2 +1,5 @@
-<section class="banner-home" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner-home.webp');">
+<?php
+$imagem = get_field('imagem');
+?>
+<section class="banner-home" style="background-image: url('<?php echo $imagem; ?>');">
 </section>
