@@ -2,7 +2,7 @@
 $equipe = get_field('equipe');
 $equipe_titulo = get_field('equipe_titulo');
 ?>
-<section class="conheca-equipe">
+<section class="conheca-equipe" id="conheca-equipe">
   <div class="container-fluid">
 
     <div class="row">

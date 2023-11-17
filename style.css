@@ -30,6 +30,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("./template-parts/banner-home/style.css");
 @import url("./template-parts/saiba/style.css");
 @import url("./template-parts/texto-imagem/style.css");
+@import url("./template-parts/contato/style.css");
 
 * {
   padding: 0;
@@ -296,7 +297,7 @@ p {
   width: 100%;
   max-width: 100%;
   opacity: 1;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-bottom: 40px;
 }
 .boxDescriptionPrime .description {
@@ -505,6 +506,9 @@ p {
   }
   .navbar-collapse {
     margin-top: 30px;
+  }
+  .contato form {
+    padding: 25px;
   }
 }
 @media (max-width: 980px) {

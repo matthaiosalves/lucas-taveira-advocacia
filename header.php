@@ -29,20 +29,20 @@
 
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="/">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">
+						<a class="nav-link" aria-current="page" href="#saiba">
 							Escritório
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item dropdown dropdown-hover">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Áreas de Atuação
 						</a>
 						<ul class="dropdown-menu">
@@ -52,19 +52,19 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="#artigos">
 							Artigos
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="#conheca-equipe">
 							Equipe
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="#entrevistas">
 							Entrevistas
 							<span class="borderBottom"></span>
 						</a>

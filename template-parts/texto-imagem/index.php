@@ -2,7 +2,7 @@
 $imagem = get_field('imagem');
 $texto = get_field('texto');
 ?>
-<section class="texto-imagem">
+<section class="texto-imagem" id="texto-imagem">
   <div class="container-fluid">
     <div class="row">
 

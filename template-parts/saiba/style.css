@@ -8,3 +8,10 @@
   line-height: 28px;
   font-family: "Poppins";
 }
+.saiba .contentTitle {
+  color: #3b425c;
+  font-size: 28px;
+  line-height: 43px;
+  font-family: "Poppins";
+  font-weight: bold;
+}

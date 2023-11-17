@@ -2,6 +2,7 @@
 $titulo = get_field('titulo');
 $subtitulo = get_field('subtitulo');
 $descricao = get_field('descricao');
+$tituloDoConteudo = get_field('titulo_do_conteudo');
 $conteudo = get_field('conteudo');
 $botao = get_field('botao');
 ?>
@@ -19,10 +20,25 @@ $botao = get_field('botao');
         <small class="description"><?php echo $descricao; ?></small>
       </div>
 
+      <div class="boxSocialsButtons justify-content-end">
+        <a href="#" class="social">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="social">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="social">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
       <hr>
     </div>
 
     <div class="row">
+      <?php if ($tituloDoConteudo) : ?>
+        <h5 class="contentTitle"><?php echo $tituloDoConteudo; ?></h5>
+      <?php endif; ?>
       <p class="contentParagraph"><?php echo $conteudo; ?></p>
     </div>
 

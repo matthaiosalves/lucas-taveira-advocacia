@@ -1,0 +1,70 @@
+.contato {
+}
+.contato input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.contato form {
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 15px #00000027;
+  border-radius: 20px;
+  padding: 60px 90px;
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+.contato form .formInput {
+  position: relative;
+}
+.contato form .formInput label {
+  position: absolute;
+  top: -10px;
+  padding: 0 10px;
+  left: 28px;
+  background-color: #fff;
+  color: #737373;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 2;
+}
+.contato form .formInput input,
+.contato form .formInput textarea,
+.contato form .formInput select {
+  width: 100%;
+  position: relative;
+  color: #cfcfcf;
+
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 50px;
+  border: #cfcfcf 1px solid;
+  text-align: left;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+.contato form .formInput textarea {
+  height: auto;
+}
+.contato form .formInput select {
+  padding-left: 10px;
+}
+.contato form #termos {
+  margin-left: -7px;
+  margin-right: 7px;
+}
+.contato form .form-check-label {
+  color: #45494c;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+.contato form .termosUso {
+  text-decoration: none;
+  color: #0773c3;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+.contato form .termosUso:hover {
+  color: #3b425c;
+}

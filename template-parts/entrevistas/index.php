@@ -1,7 +1,7 @@
 <?php
 $entrevistas = get_field('entrevistas');
 ?>
-<section class="entrevistas">
+<section class="entrevistas" id="entrevistas">
   <div class="container-fluid">
     <div class="row">
 

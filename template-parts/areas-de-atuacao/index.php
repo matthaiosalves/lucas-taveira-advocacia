@@ -1,7 +1,7 @@
 <?php
 $areas = get_field('areas_de_atuacao');
 ?>
-<section class="areasDeAtuacao" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner-areas.png');">
+<section class="areasDeAtuacao" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner-areas.png');" id="areasDeAtuacao">
   <div class="container-fluid">
 
     <div class="row">

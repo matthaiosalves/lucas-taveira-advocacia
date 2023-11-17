@@ -24,4 +24,12 @@ add_action('wp_enqueue_scripts', 'lucas_taveira_scripts');
 add_filter('show_admin_bar', '__return_false');
 add_filter('xmlrpc_enabled', '__return_false');
 
-// require get_template_directory() . '';
+function redirecionar_para_home_on_404()
+{
+	if (is_404()) {
+		wp_redirect(home_url());
+		exit();
+	}
+}
+
+add_action('template_redirect', 'redirecionar_para_home_on_404');

@@ -1,0 +1,75 @@
+.artigos {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+.artigos hr {
+  color: #dbdbdb;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+  opacity: 1;
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+.artigos .boxTitleAndDescription {
+  text-align: center;
+}
+.artigos .boxTitleAndDescription .title {
+  font-size: 34px;
+  line-height: 63px;
+  color: #1b2838;
+  font-weight: bold;
+}
+.artigos .boxTitleAndDescription .description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #3b425c;
+}
+
+.artigos .card {
+  border: 0;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+}
+.artigos .card .boxImage img {
+  width: 370px;
+  height: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.artigos .card .card-body {
+  display: flex;
+  gap: 42px;
+}
+.artigos .card .boxTitleAndDescription {
+  width: 100%;
+}
+.artigos .card .boxTitleAndDescription .title,
+.artigos .card .boxTitleAndDescription .description {
+  text-align: start;
+  max-width: 447px;
+}
+.artigos .card .boxTitleAndDescription .boxInfoArtigos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.artigos .card .boxTitleAndDescription .boxInfoArtigos .boxAutorArtigos span {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: italic;
+  color: #474544;
+
+  margin-left: 10px;
+}
+.artigos .card .boxTitleAndDescription .title {
+  font-size: 21px;
+  line-height: 32px;
+}
+.artigos .card .boxTitleAndDescription .description {
+  font-size: 15px;
+  line-height: 21px;
+  color: #474544;
+}
