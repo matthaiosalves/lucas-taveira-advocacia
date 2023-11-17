@@ -32,7 +32,7 @@
 
 
               <div class="boxInfoArtigos">
-                <div class="boxAutorArtigos">
+                <div class="boxAutorArtigos d-flex justify-content-center align-items-center">
                   <i class="fa-solid fa-clipboard fa-2x"></i></i><i class="fa fa-pencil fa"></i>
                   <span>Por Lucas Taveira - 10/09/2023</span>
                 </div>

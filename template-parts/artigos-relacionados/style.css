@@ -61,6 +61,8 @@
   line-height: 20px;
   font-style: italic;
   color: #474544;
+
+  margin-left: 10px;
 }
 .artigos .card .boxTitleAndDescription .title {
   font-size: 21px;
