@@ -31,6 +31,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("./template-parts/saiba/style.css");
 @import url("./template-parts/texto-imagem/style.css");
 @import url("./template-parts/contato/style.css");
+@import url("./template-parts/videos/style.css");
 
 * {
   padding: 0;
@@ -457,6 +458,19 @@ p {
 }
 
 /* Fim Footer*/
+.boxInfoArtigos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.boxAutorArtigos span {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: italic;
+  color: #474544;
+  margin-left: 10px;
+}
 @media (max-width: 1199px) {
   .footer .boxSocialsPrime {
     justify-content: flex-start;

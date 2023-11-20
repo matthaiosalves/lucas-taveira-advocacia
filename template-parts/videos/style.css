@@ -1,0 +1,42 @@
+.videos .boxContentAreas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  gap: 45px;
+}
+.videos .boxContentAreas .boxImage {
+  max-width: 600px;
+  height: 250px;
+  margin-bottom: 0;
+}
+.videos .boxContentAreas .boxImage img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+}
+.videos .boxContentAreas .boxTitleAndDescriptionAreas {
+  max-width: 600px;
+  width: 100%;
+}
+.videos .boxContentAreas .boxTitleAndDescriptionAreas .title {
+  color: #3b425c;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.videos .boxContentAreas .boxTitleAndDescriptionAreas .description {
+  color: #474544;
+  font-size: 16px;
+  line-height: 28px;
+}
+.videos hr {
+  color: #dbdbdb;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+}

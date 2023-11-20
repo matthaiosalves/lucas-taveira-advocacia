@@ -5,8 +5,8 @@
 
       <div class="boxTitlePrime">
         <span class="barrerLateral"></span>
-        <p class="title">Saiba + <span class="barrerHorizontal"></span></p>
-        <h5 class="subtitle">Sobre o escritório</h5>
+        <p class="title">ENTRE EM <span class="barrerHorizontal"></span></p>
+        <h5 class="subtitle">Contato conosco</h5>
       </div>
 
       <div class="boxDescriptionPrime">
