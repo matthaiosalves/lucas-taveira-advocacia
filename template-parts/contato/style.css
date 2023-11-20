@@ -48,8 +48,11 @@
 }
 .contato form .formInput textarea {
   height: auto;
+  padding-top: 15px;
 }
-.contato form .formInput select {
+.contato form .formInput select,
+.contato form .formInput input,
+.contato form .formInput textarea {
   padding-left: 10px;
 }
 .contato form #termos {
