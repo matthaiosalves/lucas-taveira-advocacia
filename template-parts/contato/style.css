@@ -1,4 +1,6 @@
 .contato {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .contato input[type="number"] {
   -moz-appearance: textfield;

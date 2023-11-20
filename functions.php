@@ -33,3 +33,13 @@ function redirecionar_para_home_on_404()
 }
 
 add_action('template_redirect', 'redirecionar_para_home_on_404');
+
+if (!function_exists('get_youtube_id')) :
+	function get_youtube_id($url)
+	{
+		preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match);
+		$youtube_id = $match[1];
+
+		return $youtube_id;
+	}
+endif;

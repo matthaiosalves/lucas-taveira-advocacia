@@ -1,4 +1,5 @@
-<section class="contato" id="contato">
+<section class="contato" id="contato" style="<?php echo is_front_page() ? 'background-color: transparent;' : 'background-color: #F4F4F4;'; ?>
+">
   <div class="container-fluid">
 
     <div class="row px-3 titlePrimeRow">

@@ -63,9 +63,29 @@ $(document).ready(function () {
                     // Animando a rolagem suave para a seção de destino
                     $('html, body').animate({
                         scrollTop: scrollToPosition
-                    }, 800);
+                    }, 10);
                 }
             }
         });
     });
 })();
+
+(function($) {
+    $(document).ready(function() {
+        $('.videos .boxContentAreas').click(function() {
+            var videoId = $(this).data('video-id');
+            $('#videoFrame').attr('src', 'https://www.youtube.com/embed/' + videoId);
+            $('.videoSelecionado').show();
+
+            // Rola a página até o centro da seção do vídeo selecionado
+            var videoSelecionadoTop = $('.videoSelecionado').offset().top;
+            var videoSelecionadoHeight = $('.videoSelecionado').outerHeight();
+            var windowHeight = $(window).height();
+            var scrollTo = videoSelecionadoTop - (windowHeight / 2) + (videoSelecionadoHeight / 2);
+
+            $('html, body').animate({
+                scrollTop: scrollTo
+            }, 10);
+        });
+    });
+})(jQuery);

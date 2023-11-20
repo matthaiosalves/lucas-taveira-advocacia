@@ -102,6 +102,7 @@ $footer = get_field('footer', 'options');
 <script src="https://kit.fontawesome.com/33ee87c64c.js" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
 
+
 </body>
 
 </html>
