@@ -10,6 +10,9 @@
   flex: 1;
   flex-shrink: 0;
 }
+.texto-imagem .col-imagem img {
+  border-radius: 20px;
+}
 .texto-imagem .col-texto .texto {
   font-family: "Poppins";
   font-size: 18px;
