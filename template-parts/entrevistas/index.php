@@ -17,7 +17,7 @@ $entrevistas = get_field('entrevistas');
           <div class="boxButton">
             <a href="#" class="buttonEntrevistas">
               VEJA TODAS
-              <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+              <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
             </a>
 
           </div>

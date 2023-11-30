@@ -70,12 +70,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.navbar .navbar-brand img {
+  width: 240px;
 }
 .navbar #navbarNavDropdown {
   justify-content: end;
 }
 .navbar .navbar-nav {
-  gap: 45px;
+  gap: 33px;
 }
 .navbar .nav-item {
   height: 45px;
@@ -457,6 +463,18 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+.copyright svg {
+  width: 70px;
+  margin-left: 10px;
+}
+.copyright a {
+  text-decoration: none;
+}
+.copyright a i {
+  font-size: 17px;
+  margin-left: 10px;
+  color: #ffffff;
+}
 /* Fim Footer*/
 .boxInfoArtigos {
   display: flex;
@@ -514,6 +532,11 @@ p {
     background-color: #222f4a;
     height: auto;
     display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar .navbar-brand img {
+    width: 150px;
   }
   .navbar .navbar-nav {
     gap: 20px;

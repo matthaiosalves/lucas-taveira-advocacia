@@ -56,7 +56,7 @@
           <div class="boxButton" style="margin-top: 30px;">
             <a class="buttonAreas" href="<?php echo $botao; ?>">
               Enviar
-              <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+              <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
             </a>
           </div>
         </div>

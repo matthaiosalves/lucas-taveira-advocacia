@@ -10,7 +10,7 @@ $texto = get_field('texto');
         <p class="texto"><?php echo $texto; ?></p>
       </div>
       <div class="col-imagem">
-        <img src="<?php echo $imagem; ?>" alt="Imagem de apoio ao texto do lado.">
+        <img loading="lazy" src="<?php echo $imagem; ?>" alt="Imagem de apoio ao texto do lado.">
       </div>
     </div>
   </div>

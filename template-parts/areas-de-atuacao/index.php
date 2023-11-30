@@ -18,7 +18,7 @@ $areas = get_field('areas_de_atuacao');
         <div class="boxContentAreas">
 
           <figure class="boxImage">
-            <img class="img-fluid" src="<?php echo $item['imagem']; ?>" alt="Áreas de Atuação">
+            <img loading="lazy" class="img-fluid" src="<?php echo $item['imagem']; ?>" alt="Áreas de Atuação">
           </figure>
 
           <div class="boxTitleAndDescriptionAreas">
@@ -30,7 +30,7 @@ $areas = get_field('areas_de_atuacao');
             <div class="boxButton">
               <a class="buttonAreas" href="#">
                 SAIBA MAIS
-                <img class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+                <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
               </a>
             </div>
           </div>
