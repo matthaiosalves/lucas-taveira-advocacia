@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("./template-parts/texto-imagem/style.css");
 @import url("./template-parts/contato/style.css");
 @import url("./template-parts/videos/style.css");
+@import url("./template-parts/titulo-texto/style.css");
 
 * {
   padding: 0;
