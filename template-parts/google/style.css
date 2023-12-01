@@ -1,0 +1,39 @@
+.google {
+  padding-bottom: 40px;
+}
+.google hr {
+  color: #dbdbdb;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+.google .title,
+.google .subtitle {
+  font-family: "Poppins";
+  color: #1b2838;
+  font-weight: bold;
+}
+.google .title {
+  font-size: 36px;
+}
+.google .subtitle {
+  font-size: 27px;
+  margin-bottom: 0;
+
+  margin-top: 35px;
+}
+.google .stars {
+  justify-content: center;
+}
+.google .stars svg {
+  width: 56px;
+}
+.google .stars .ponts {
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #1b2838;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
