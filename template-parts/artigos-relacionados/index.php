@@ -80,7 +80,7 @@
 
     <div class="row">
       <div class="boxButton d-flex justify-content-center" style="margin-top: 30px;">
-        <a class="buttonAreas" href="#">
+        <a class="buttonAreas" href="/artigos/">
           VEJA TODAS
           <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
         </a>
