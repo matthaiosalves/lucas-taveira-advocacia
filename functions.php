@@ -43,13 +43,3 @@ if (!function_exists('get_youtube_id')) :
 		return $youtube_id;
 	}
 endif;
-
-function redirecionar_para_pagina_inicial()
-{
-	if (!is_home() && !is_front_page()) {
-		wp_redirect(home_url());
-		exit;
-	}
-}
-
-add_action('template_redirect', 'redirecionar_para_pagina_inicial');
