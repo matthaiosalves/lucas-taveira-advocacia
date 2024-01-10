@@ -17,9 +17,26 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lucas Taveira</title>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Lucas Taveira Advocacia">
+	<meta name="keywords" content="Lucas Taveira Advocacia">
+	<meta name="author" content="Lucas Taveira Advocacia">
+	<meta name="robots" content="index, follow">
+	<meta property="og:title" content="Lucas Taveira Advocacia">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="<?php echo get_site_url(); ?>">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="800">
+	<meta property="og:image:height" content="800">
+	<meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/themes/lucas-taveira/img/logo-header.svg">
+
+
 	<?php wp_head(); ?>
 </head>
 
