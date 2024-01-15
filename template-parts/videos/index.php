@@ -1,6 +1,5 @@
 <?php
-$url = 'http://www.youtube.com/watch?v=dQw4w9WgXcQ';
-$youtube_id = get_youtube_id($url);
+
 
 $areas = array(
   array(
