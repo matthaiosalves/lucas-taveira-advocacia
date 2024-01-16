@@ -17,7 +17,7 @@ $equipe_titulo = get_field('equipe_titulo');
       <?php foreach ($equipe as $item) : ?>
         <div class="boxTeam col-sm-12 col-md-6 col-lg-4">
           <figure>
-            <img src="<?php echo $item['imagem']; ?>" alt="Equipe">
+            <img loading="lazy" src="<?php echo $item['imagem']; ?>" alt="Equipe">
           </figure>
 
           <div class="boxTitleAndDescription">

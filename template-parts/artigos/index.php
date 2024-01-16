@@ -87,7 +87,7 @@
                 if (has_post_thumbnail()) {
                   the_post_thumbnail('thumbnail', array('loading' => 'lazy'));
                 } else {
-                  echo '<img loading="lazy" src="' . get_template_directory_uri() . '/img/default-thumbnail.png" alt="Imagem da thumb do artigo">';
+                  echo '<img loading="lazy" src="https://i.imgur.com/8RjZi65.png" alt="Imagem da thumb do artigo">';
                 }
                 ?>
               </div>

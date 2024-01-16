@@ -43,3 +43,58 @@ if (!function_exists('get_youtube_id')) :
 		return $youtube_id;
 	}
 endif;
+
+
+
+// add_action('admin_post_enviar_formulario', 'processar_envio_formulario');
+// add_action('admin_post_nopriv_enviar_formulario', 'processar_envio_formulario');
+
+// function processar_envio_formulario()
+// {
+
+// 	if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'enviar_formulario_nonce')) {
+
+
+// 		if (isset($_POST['enviar_formulario'])) {
+
+
+// 			$nome = sanitize_text_field($_POST['nomeCompleto']);
+// 			$celular = sanitize_text_field($_POST['Celular']);
+// 			$email = sanitize_email($_POST['email']);
+// 			$genero = sanitize_text_field($_POST['genero']);
+// 			$mensagem = sanitize_textarea_field($_POST['mensagem']);
+
+
+// 			$mail = new PHPMailer(true);
+
+// 			try {
+// 				$mail->isSMTP();
+// 				$mail->Host       = 'smtp.example.com';
+// 				$mail->SMTPAuth   = true;
+// 				$mail->Username   = 'seu_usuario_smtp';
+// 				$mail->Password   = 'sua_senha_smtp';
+// 				$mail->SMTPSecure = 'tls';
+// 				$mail->Port       = 587;
+
+
+// 				$mail->setFrom($email, $nome);
+// 				$mail->addAddress('destinatario@example.com', 'Nome do Destinatário');
+
+
+// 				$mail->isHTML(true);
+// 				$mail->Subject = 'Assunto do E-mail';
+// 				$mail->Body    = "Nome: $nome<br>Celular: $celular<br>Email: $email<br>Gênero: $genero<br>Mensagem: $mensagem";
+
+
+// 				$mail->send();
+
+
+// 				wp_redirect(home_url('/envio-sucedido/'));
+// 				exit;
+// 			} catch (Exception $e) {
+// 				wp_redirect(home_url('/erro-no-envio/'));
+// 				exit;
+// 			}
+// 		}
+// 	}
+// }

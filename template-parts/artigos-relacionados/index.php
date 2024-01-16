@@ -78,6 +78,85 @@
       <?php endfor; ?>
     </div>
 
+    <!-- <div class="row px-4 justify-content-center gap-4">
+      <?php
+      $args = array(
+        'post_type' => 'artigo',
+        'posts_per_page' => 3,
+      );
+      $query = new WP_Query($args);
+      if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+      ?>
+
+          <div class="card col-sm-6 col-md-6 col-lg-12">
+            <div class="card-body">
+
+              <div class="boxImage">
+                <?php
+
+                if (has_post_thumbnail()) {
+                  the_post_thumbnail('thumbnail', array('loading' => 'lazy'));
+                } else {
+                  echo '<img loading="lazy" src="https://i.imgur.com/8RjZi65.png" alt="Imagem da thumb do artigo">';
+                }
+                ?>
+              </div>
+
+              <div class="boxTitleAndDescription">
+                <h2 class="title">
+                  <?php the_title(); ?>
+                </h2>
+                <hr />
+                <p class="description">
+                  <?php
+                  $excerpt = get_the_excerpt();
+                  echo substr($excerpt, 0, 100);
+                  if (strlen($excerpt) > 100) echo '...';
+                  ?>
+                </p>
+
+                <div class="boxInfoArtigos">
+                  <div class="boxAutorArtigos d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28.629" height="31.944" viewBox="0 0 28.629 31.944">
+                    </svg>
+                    <span>Por <?php the_author(); ?> - <?php the_time('d/m/Y'); ?></span>
+                  </div>
+
+                  <div class="boxButton">
+                    <a class="buttonAreas" href="<?php the_permalink(); ?>">
+                      SAIBA MAIS
+                      <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+                    </a>
+                  </div>
+
+                  <div class="boxSocialsButtons">
+                    <a href="https://api.whatsapp.com/send?text=<?php echo urlencode(get_the_title() . ' - ' . get_the_permalink()); ?>" class="social" target="_blank">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>" class="social" target="_blank">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sharingapp/?url=<?php echo urlencode(get_the_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>" class="social" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+        // 
+        echo '<p>Nenhum artigo encontrado.</p>';
+      endif;
+      ?>
+    </div> -->
+
     <div class="row">
       <div class="boxButton d-flex justify-content-center" style="margin-top: 30px;">
         <a class="buttonAreas" href="/artigos/">
