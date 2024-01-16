@@ -7,11 +7,19 @@
  *
  * @package Lucas_Taveira
  */
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
 	define('_S_VERSION', '1.0.0');
 }
+
+// Registrar menu de navegação
+function wp_custom_menu()
+{
+	register_nav_menu('primary', __('Menu Principal', 'lucas-taveira'));
+}
+add_action('after_setup_theme', 'wp_custom_menu');
 
 function lucas_taveira_scripts()
 {
