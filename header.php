@@ -44,7 +44,7 @@
 	<?php wp_body_open(); ?>
 
 
-	<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
 				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/logo-header.svg" alt="Logo">
@@ -94,34 +94,6 @@
 						</a>
 					</li>
 				</ul>
-			</div>
-		</div>
-	</nav> -->
-
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="/">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/logo-header.svg" alt="Logo">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<?php
-				wp_nav_menu(array(
-					'theme_location'  => 'primary',
-					'depth'           => 2,
-					'container'       => false,
-					'menu_class'      => 'navbar-nav ms-auto',
-					'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-					'walker'          => new Custom_Menu_Walker(),
-					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					'item_spacing'    => 'preserve', // Important for keeping spacing consistent
-					'menu_id'         => 'primary-menu',
-					'menu_class'      => 'navbar-nav ms-auto',
-					'walker'          => new Custom_Menu_Walker(),
-				));
-				?>
 			</div>
 		</div>
 	</nav>
