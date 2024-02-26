@@ -533,6 +533,11 @@ svg {
   }
 }
 @media (max-width: 992px) {
+  .copyright {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .navbar {
     background-color: #222f4a;
     height: auto;

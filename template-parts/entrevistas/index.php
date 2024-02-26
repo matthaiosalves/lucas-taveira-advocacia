@@ -25,7 +25,7 @@ $descricao = get_field('descricao');
           </div>
         </div>
 
-        <figure class="boxImage">
+        <figure class="boxImage mt-4">
           <?php echo $entrevistas; ?>
         </figure>
 

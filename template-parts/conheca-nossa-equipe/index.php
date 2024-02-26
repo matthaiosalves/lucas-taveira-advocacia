@@ -29,14 +29,14 @@ $equipe_titulo = get_field('equipe_titulo');
       <?php endforeach; ?>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="boxButton d-flex justify-content-center" style="margin-top: 30px;">
         <a class="buttonAreas" href="/equipe">
           SAIBA MAIS
           <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
         </a>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </section>
