@@ -43,9 +43,6 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 
-	<?php
-	$site_url = get_site_url();
-	?>
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
@@ -57,13 +54,13 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="<?php echo $site_url; ?>#saiba">
+						<a class="nav-link" aria-current="page" href="#saiba">
 							Escritório
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item dropdown dropdown-hover">
-						<a class="nav-link dropdown-toggle" href="<?php echo $site_url; ?>#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Áreas de Atuação
 						</a>
 						<!-- <ul class="dropdown-menu">
@@ -73,25 +70,25 @@
 						</ul> -->
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo $site_url; ?>#artigos">
+						<a class="nav-link" href="#artigos">
 							Artigos
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo $site_url; ?>#conheca-equipe">
+						<a class="nav-link" href="#conheca-equipe">
 							Equipe
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo $site_url; ?>#entrevistas">
+						<a class="nav-link" href="#entrevistas">
 							Entrevistas
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item buttonContactHeader">
-						<a class="nav-link" href="<?php echo $site_url; ?>#contato">
+						<a class="nav-link" href="#contato">
 							Contato
 						</a>
 					</li>
