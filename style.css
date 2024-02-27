@@ -252,8 +252,8 @@ svg {
 /*Fim Socials*/
 
 .boxTitlePrime {
-  width: 365px;
-  height: 84px;
+  width: fit-content;
+  min-height: 84px;
   background-color: #f4f4f4;
   border-radius: 0px 20px 20px 0px;
 

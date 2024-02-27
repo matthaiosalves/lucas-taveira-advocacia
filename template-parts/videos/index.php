@@ -1,26 +1,6 @@
 <?php
 
-
-$areas = array(
-  array(
-    'imagem' => 'http://lucas-taveira-advogado.local/wp-content/uploads/2023/10/6-praticas-mais-valorizadas-em-um-escritorio-de-advocacia.jpg',
-    'titulo' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'descricao' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'video_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-  ),
-  array(
-    'imagem' => 'http://lucas-taveira-advogado.local/wp-content/uploads/2023/10/6-praticas-mais-valorizadas-em-um-escritorio-de-advocacia.jpg',
-    'titulo' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'descricao' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'video_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-  ),
-  array(
-    'imagem' => 'http://lucas-taveira-advogado.local/wp-content/uploads/2023/10/6-praticas-mais-valorizadas-em-um-escritorio-de-advocacia.jpg',
-    'titulo' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'descricao' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy',
-    'video_url' => 'https://youtu.be/3OnjOv_TtXo?si=ME_IHz_wkdkRnK7q'
-  )
-);
+$videos = get_field("videos");
 ?>
 
 <section class="videoSelecionado mb-5" style="background-color: #1B2838;">
@@ -38,10 +18,12 @@ $areas = array(
 <section class="videos mb-5">
   <div class="container-fluid">
     <div class="row">
-      <?php $totalAreas = count($areas); ?>
-      <?php foreach ($areas as $key => $item) : ?>
-        <div class="boxContentAreas" data-video-id="<?php echo get_youtube_id($item['video_url']); ?>">
-          <!-- Adicione um atributo data-video-id para armazenar o ID do vídeo relacionado -->
+      <?php $totalAreas = count($videos); ?>
+      <?php foreach ($videos as $key => $item) :
+        $interno = $item['url_interno'];
+        $externo = $item['url_externo'];
+      ?>
+        <div class="boxContentAreas" data-video-id="<?php echo get_youtube_id($item['url_interno']); ?>">
           <figure class="boxImage">
             <img class="img-fluid" src="<?php echo $item['imagem']; ?>" alt="Áreas de Atuação">
           </figure>

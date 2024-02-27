@@ -218,7 +218,7 @@ $footer = get_field('footer', 'options');
         <div class="col-sm-12 col-md-12 col-lg-5 text-sm-center text-md-end">
           Desenvolvido por Fabino designer
 
-          <a class="social" href="/">
+          <a class="social" href="//www.linkedin.com/in/jo%C3%A3o-paulo-fabino/">
             <svg xmlns="http://www.w3.org/2000/svg" width="119.263" height="36.883" viewBox="0 0 119.263 36.883">
               <g id="Grupo_15082" data-name="Grupo 15082" transform="translate(-95.586 -37.107)">
                 <path id="Caminho_37" data-name="Caminho 37" d="M663.5,91.976h-9.6v3.1h1.762v14.937h3.1V95.073h4.782a4.033,4.033,0,0,1,4.033,4.033v10.9h3.1V99.145A7.169,7.169,0,0,0,663.5,91.976Z" transform="translate(-475.992 -46.778)" fill="#fff" />
