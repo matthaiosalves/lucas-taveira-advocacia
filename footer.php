@@ -258,6 +258,28 @@ $footer = get_field('footer', 'options');
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/33ee87c64c.js" crossorigin="anonymous"></script>
+<?php if (is_page('videos')) : ?>
+  <script>
+    (function($) {
+      $(document).ready(function() {
+        $('.videos .boxContentAreas').click(function() {
+          var videoId = $(this).data('video-id');
+          $('#videoFrame').attr('src', 'https://www.youtube.com/embed/' + videoId);
+          $('.videoSelecionado').show();
+
+          var videoSelecionadoTop = $('.videoSelecionado').offset().top;
+          var videoSelecionadoHeight = $('.videoSelecionado').outerHeight();
+          var windowHeight = $(window).height();
+          var scrollTo = videoSelecionadoTop - (windowHeight / 2) + (videoSelecionadoHeight / 2);
+
+          $('html, body').animate({
+            scrollTop: scrollTo
+          }, 10);
+        });
+      });
+    })(jQuery);
+  </script>
+<?php endif; ?>
 <?php wp_footer(); ?>
 
 
