@@ -8,7 +8,7 @@ $areas = get_field('areas_de_atuacao');
 
       <div class="boxTitleAndDescription">
         <h2 class="title">Áreas de atuação</h2>
-        <p class="descrition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor.</p>
+        <!-- <p class="descrition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor.</p> -->
       </div>
     </div>
     <hr />
@@ -27,12 +27,14 @@ $areas = get_field('areas_de_atuacao');
               <?php echo $item['descricao']; ?>
             </p>
 
-            <div class="boxButton">
-              <a class="buttonAreas" href="#">
-                SAIBA MAIS
-                <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
-              </a>
-            </div>
+            <?php if ($item['url_areas']) : ?>
+              <div class="boxButton">
+                <a class="buttonAreas" href="<?php echo $item['url_areas']; ?>">
+                  SAIBA MAIS
+                  <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+                </a>
+              </div>
+            <?php endif; ?>
           </div>
 
         </div>
