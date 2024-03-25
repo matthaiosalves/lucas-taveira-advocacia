@@ -37,37 +37,26 @@ $(document).ready(function () {
   });
 });
 
-(function() {
-    $(document).ready(function(){
-        // Adiciona o clique para os links do navbar
-        $('.navbar-nav a').on('click', function(e) {
-            // Previne o comportamento padrão do link
-            e.preventDefault();
+// (function() {
+//     $(document).ready(function(){
+//         $('.navbar-nav a').on('click', function(e) {
+//             e.preventDefault();
+//             var target = $(this).attr('href');
+//             if (target && target !== "#") {
+//                 var navbarHeight = $('.navbar').outerHeight();
+//                 var targetPosition = $(target).offset();
+//                 if (targetPosition) {
+//                     var scrollToPosition = targetPosition.top - navbarHeight;
+//                     $('html, body').animate({
+//                         scrollTop: scrollToPosition
+//                     }, 10);
+//                 }
+//             }
+//         });
+//     });
+// })();
 
-            // Obtém o destino da ancoragem
-            var target = $(this).attr('href');
 
-            // Verifica se o destino da ancoragem não é uma string vazia ou #
-            if (target && target !== "#") {
-                // Calcula a altura do navbar
-                var navbarHeight = $('.navbar').outerHeight();
 
-                // Obtém a posição da seção de destino
-                var targetPosition = $(target).offset();
-
-                // Verifica se a posição é válida
-                if (targetPosition) {
-                    // Subtrai a altura do navbar para obter a posição correta
-                    var scrollToPosition = targetPosition.top - navbarHeight;
-
-                    // Animando a rolagem suave para a seção de destino
-                    $('html, body').animate({
-                        scrollTop: scrollToPosition
-                    }, 10);
-                }
-            }
-        });
-    });
-})();
 
 

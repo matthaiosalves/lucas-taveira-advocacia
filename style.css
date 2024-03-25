@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 body,
 input,

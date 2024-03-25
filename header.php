@@ -54,13 +54,13 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#saiba">
+						<a class="nav-link" aria-current="page" href="<?php echo get_site_url(); ?>#saiba">
 							Escritório
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item dropdown dropdown-hover">
-						<a class="nav-link dropdown-toggle" href="#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="<?php echo get_site_url(); ?>#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Áreas de Atuação
 						</a>
 						<!-- <ul class="dropdown-menu">
@@ -70,25 +70,25 @@
 						</ul> -->
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#artigos">
+						<a class="nav-link" href="<?php echo get_site_url(); ?>#artigos">
 							Artigos
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#conheca-equipe">
+						<a class="nav-link" href="<?php echo get_site_url(); ?>#conheca-equipe">
 							Equipe
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#entrevistas">
+						<a class="nav-link" href="<?php echo get_site_url(); ?>#entrevistas">
 							Entrevistas
 							<span class="borderBottom"></span>
 						</a>
 					</li>
 					<li class="nav-item buttonContactHeader">
-						<a class="nav-link" href="#contato">
+						<a class="nav-link" href="<?php echo get_site_url(); ?>#contato">
 							Contato
 						</a>
 					</li>

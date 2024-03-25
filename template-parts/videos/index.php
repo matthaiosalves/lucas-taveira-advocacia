@@ -28,7 +28,7 @@ $videos = get_field("videos");
             <?php if ($item['imagem']) : ?>
               <img class="img-fluid" src="<?php echo $item['imagem']; ?>" alt="Áreas de Atuação">
             <?php else : ?>
-              <img class="img-fluid" src="https://img.youtube.com/vi/<?php echo get_youtube_id($interno); ?>/thumbnail.jpg" alt="Áreas de Atuação">
+              <img class="img-fluid" src="https://img.youtube.com/vi/<?php echo get_youtube_id($interno); ?>/sddefault.jpg" alt="Entrevista - <?php echo $item['titulo']; ?>">
             <?php endif; ?>
 
           </figure>
@@ -37,16 +37,17 @@ $videos = get_field("videos");
             <p class="description">
               <?php echo $item['descricao']; ?>
             </p>
+
+            <?php if ($externo) : ?>
+              <div class="boxButton">
+                <a class="buttonAreas" href="<?php echo $externo; ?>" target="_blank">
+                  ACESSAR
+                  <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
+                </a>
+              </div>
+            <?php endif; ?>
           </div>
 
-          <?php if (!empty($externo)) : ?>
-            <div class="boxButton">
-              <a class="buttonAreas" href="<?php echo $externo; ?>" target="_blank">
-                Acessar
-                <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
-              </a>
-            </div>
-          <?php endif; ?>
         </div>
         <hr>
       <?php endforeach; ?>
