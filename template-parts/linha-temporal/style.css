@@ -1,0 +1,38 @@
+.linha-tempo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.linha-tempo .boxLinhaTemporal {
+  justify-content: space-between;
+}
+.linha-tempo .boxLinhaTemporal:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.linha-tempo .boxLinhaTemporal img {
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.linha-tempo .ano {
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 30px;
+  color: #474544;
+}
+.linha-tempo .barrer {
+  width: 121px;
+  margin-top: 0;
+}
+.linha-tempo .texto {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 30px;
+  color: #474544;
+}
+
+@media (max-width: 998px) {
+  .linha-tempo .boxLinhaTemporal {
+    justify-content: center;
+  }
+}
