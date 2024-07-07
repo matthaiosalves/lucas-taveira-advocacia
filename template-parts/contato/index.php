@@ -64,51 +64,6 @@
       </form>
 
 
-      <!-- <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post" class="row">
-        <input type="hidden" name="action" value="enviar_formulario">
-        <div class="formInput col-sm-12 col-md-12 col-lg-6">
-          <label for="nomeCompleto">Nome Completo*</label>
-          <input type="text" id="nomeCompleto" placeholder="">
-        </div>
-        <div class="formInput col-sm-12 col-md-12 col-lg-5">
-          <label for="Celular">Celular</label>
-          <input type="number" id="Celular" placeholder="">
-        </div>
-        <div class="formInput col-sm-12 col-md-12 col-lg-7">
-          <label for="email">E-mail*</label>
-          <input type="email" id="email" placeholder="">
-        </div>
-        <div class="formInput col-sm-12 col-md-12 col-lg-4">
-          <label for="genero">Gênero</label>
-          <select id="genero">
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
-          </select>
-        </div>
-
-        <div class="formInput col-sm-12 col-md-12 col-lg-12">
-          <label for="mensagem">Mensagem*</label>
-          <textarea id="mensagem" rows="7" cols="50" placeholder=""></textarea>
-        </div>
-
-        <div class="form-check col-sm-12 col-md-12 col-lg-12 px-4 ml-3">
-          <input class="form-check-input" type="checkbox" id="termos" required>
-          <label class="form-check-label" for="termos">
-            Li e aceito os <a class="termosUso" href="/">Termos de Uso e a Política de Privacidade</a> do site
-          </label>
-        </div>
-
-        <div class="row">
-          <div class="boxButton" style="margin-top: 30px;">
-            <button type="submit" class="buttonAreas" name="enviar_formulario">
-              Enviar
-              <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg" alt="Seta">
-            </button>
-          </div>
-        </div>
-
-      </form> -->
     </div>
   </div>
 </section>
