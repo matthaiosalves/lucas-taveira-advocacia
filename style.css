@@ -45,6 +45,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+html {
+  scroll-padding-top: 100px;
+}
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;

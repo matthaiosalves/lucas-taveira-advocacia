@@ -46,7 +46,7 @@
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/logo-header.svg" alt="Logo">
+				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/logo-header.svg" alt="Logo" width="240" height="auto">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -59,16 +59,22 @@
 							<span class="borderBottom"></span>
 						</a>
 					</li>
-					<li class="nav-item dropdown dropdown-hover">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="<?php echo get_site_url(); ?>/#areasDeAtuacao">
+							Áreas de Atuação
+							<span class="borderBottom"></span>
+						</a>
+					</li>
+					<!-- <li class="nav-item dropdown dropdown-hover">
 						<a class="nav-link dropdown-toggle" href="<?php echo get_site_url(); ?>/#areasDeAtuacao" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Áreas de Atuação
 						</a>
-						<!-- <ul class="dropdown-menu">
+						<ul class="dropdown-menu">
 							<span class="traceBlue"></span>
 							<li><a class="dropdown-item" href="#">Direito do Consumidor</a></li>
 							<li><a class="dropdown-item" href="#">Inventário e Partilha</a></li>
-						</ul> -->
-					</li>
+						</ul> 
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="<?php echo get_site_url(); ?>/#artigos">
 							Artigos
