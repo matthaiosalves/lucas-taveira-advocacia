@@ -4,10 +4,18 @@ Template Name: LP
 */
 
 get_header();
+$entrevistas = get_field('entrevistas_lp');
+$descricao = get_field('descricao_lp');
+$faq = get_field('faq');
 ?>
 <style>
   .navbar {
     display: none;
+  }
+
+  .faq {
+    position: relative;
+    z-index: 2;
   }
 
   .backgroundBlue {
@@ -97,6 +105,108 @@ get_header();
   }
 
   .accordion .accordion-collapse.collapse.show {}
+
+  .custom-carousel,
+  iframe {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    text-align: center;
+  }
+
+  .custom-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .carousel-control-prev {
+    left: -100px;
+    right: auto;
+  }
+
+  .carousel-control-next {
+    right: -100px;
+    left: auto;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: #1B2838;
+    height: 49px;
+    width: 62px;
+    top: 45%;
+  }
+
+  #faqBox {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    background-image: url('http://lucas-taveira-advogado.local/wp-content/themes/lucas-taveira/img/banner-areas.png');
+  }
+
+  #faqBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .voltarAoSite {
+    max-width: 373px;
+    width: 100%;
+    height: 84px;
+    background-color: #3B425C;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 15px;
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Poppins";
+  }
+
+  .voltarAoSite:hover {
+    color: #fff;
+    background-color: #1B2838;
+  }
+
+  .voltarAoSite:hover .setaButton {
+    right: 15px;
+  }
+
+  .voltarAoSite .setaButton {
+    width: 25px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+
+  @media (max-width: 992px) {
+    .carousel-control-prev {
+      left: 0;
+      right: auto;
+    }
+
+    .carousel-control-next {
+      right: 0;
+      left: auto;
+    }
+  }
 </style>
 
 <header>
@@ -120,7 +230,7 @@ get_header();
 
       <div class="col-12 boxDescription">
         <p class="description">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          <?php echo $descricao; ?>
         </p>
       </div>
 
@@ -128,54 +238,64 @@ get_header();
 
     <div class="row">
 
-    </div>
-  </div>
-</section>
-<?php require_once get_template_directory() . '/template-parts/saiba/index.php'; ?>
-<section class="faq">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <div id="carouselExampleControls" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <?php foreach ($entrevistas as $index => $item): ?>
+            <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+              <?php echo $item['entrevista']; ?>
             </div>
-          </div>
+          <?php endforeach; ?>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
     </div>
   </div>
+</section>
+<section id="faqBox">
+  <?php require_once get_template_directory() . '/template-parts/saiba/index.php'; ?>
+  <?php if (!empty($faq)): ?>
+    <section class="faq">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="accordion" id="accordionExample">
+            <?php
+            $index = 0;
+            foreach ($faq as $item):
+              $index++;
+            ?>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading<?php echo $index; ?>">
+                  <button class="accordion-button <?php echo $index === 1 ? '' : 'collapsed'; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $index; ?>" aria-expanded="<?php echo $index === 1 ? 'true' : 'false'; ?>" aria-controls="collapse<?php echo $index; ?>">
+                    <?php echo $index . '. ' . $item['pergunta']; ?>
+                  </button>
+                </h2>
+                <div id="collapse<?php echo $index; ?>" class="accordion-collapse collapse <?php echo $index === 1 ? 'show' : ''; ?>" aria-labelledby="heading<?php echo $index; ?>" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong><?php echo $item['resposta']; ?></strong>
+                  </div>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <a class="voltarAoSite" href="/" rel="noopener noreferrer">
+    <img loading="lazy" class="setaButton img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/arrow-lg.svg" alt="Seta">
+    <span class="text-white">IR PARA O</span> <br />
+    <span class="text-white" style="font-size: 21px;
+    font-weight: bold;">Site institucional</span>
+  </a>
 </section>
 <?php require_once get_template_directory() . '/template-parts/google/index.php'; ?>
 <?php get_footer(); ?>

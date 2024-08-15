@@ -1,6 +1,7 @@
 .saiba {
   padding-top: 50px;
   padding-bottom: 80px;
+  position: relative;
 }
 .saiba .contentParagraph {
   color: #474544;
