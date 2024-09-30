@@ -42,11 +42,12 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
+	<?php $header = get_field('header', 'option'); ?>
 
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/img/logo-header.svg" alt="Logo" width="240" height="auto">
+				<img loading="lazy" src="<?php echo $header; ?>" alt="Logo" width="240" height="auto">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
