@@ -1,4 +1,5 @@
 # ⚖️ Lucas Taveira Advocacia
+
 Este projeto é um template de site institucional para escritórios de advocacia, desenvolvido em WordPress com foco em responsividade e usabilidade. O objetivo é fornecer uma base sólida e personalizável para advogados e escritórios que desejam estabelecer uma presença online profissional.​
 
 🛠️ Tecnologias Utilizadas
@@ -10,6 +11,7 @@ jQuery​
 SCSS/CSS​
 
 📁 Estrutura do Projeto
+
 A estrutura do projeto segue as convenções padrão de temas do WordPress, com os seguintes diretórios e arquivos principais:​
 
 img/ – Imagens utilizadas no tema.​
