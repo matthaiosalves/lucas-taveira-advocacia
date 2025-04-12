@@ -15,11 +15,17 @@ SCSS/CSS​
 A estrutura do projeto segue as convenções padrão de temas do WordPress, com os seguintes diretórios e arquivos principais:​
 
 img/ – Imagens utilizadas no tema.​
+
 js/ – Scripts JavaScript personalizados.​
+
 languages/ – Arquivos de tradução para internacionalização.​
+
 template-parts/ – Partes reutilizáveis de templates.​
+
 functions.php – Arquivo principal de funções do tema.​
+
 style.css – Estilos principais do tema.​
+
 index.php – Arquivo principal do tema.​
 
 📄 Licença
